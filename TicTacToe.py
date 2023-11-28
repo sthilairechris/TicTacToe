@@ -37,6 +37,8 @@ def print_board(board):
     
 def Move(symbol, board):
     move_success = False
+
+    #While for when we don't know how many times we're looping
     while not move_success:
         if symbol == 'X':
             user_input = input('Enter an option: 1 - 9 \nOr press x to exit:  ')
@@ -105,7 +107,6 @@ while True:
     if user_input not in Menu_options:
         print()
         print('OPTION NOT AVAILABLE')
-        user_input == '2'
 
     elif user_input == '1':
         print()
@@ -115,3 +116,4 @@ while True:
         print()
         print('Goodbye!')
         exit()
+
