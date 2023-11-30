@@ -95,25 +95,30 @@ def single_player_game():
 
 Menu_options = ('1', 'x')
 
-while True:
-    print()
-    print('*** MENU ***')
-    print('1 = 1 Player')
-    print('x = Exit')
 
-    print()
-    user_input = input('Enter an option: ')
-
-    if user_input not in Menu_options:
+def main():
+    while True:
         print()
-        print('OPTION NOT AVAILABLE')
+        print('*** MENU ***')
+        print('1 = 1 Player')
+        print('x = Exit')
 
-    elif user_input == '1':
         print()
-        single_player_game()
+        user_input = input('Enter an option: ')
 
-    elif user_input == 'x':
-        print()
-        print('Goodbye!')
-        exit()
+        if user_input not in Menu_options:
+            print()
+            print('OPTION NOT AVAILABLE')
 
+        elif user_input == '1':
+            print()
+            single_player_game()
+
+        elif user_input == 'x':
+            print()
+            print('Goodbye!')
+            exit()
+
+
+if __name__ == "__main__":
+    main()
